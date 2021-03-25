@@ -3,7 +3,7 @@ agent any
 stages{
   stage('build'){
    when{
-    changeRequest()
+    changeRequest title: "swe-pr"
      }
    steps{
      echo "hi all"
